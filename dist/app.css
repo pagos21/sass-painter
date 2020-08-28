@@ -30,7 +30,7 @@
 #header4Sass .hbottom_bar {
   font-size: 14px;
 }
-#header4Sass .hbottom_bar ul {
+#header4Sass .hbottom_bar .mainMenu {
   display: flex;
   justify-content: flex-end;
   padding: 10px 0;
@@ -39,43 +39,43 @@
   align-items: center;
   color: white;
 }
-#header4Sass .hbottom_bar ul .logo {
+#header4Sass .hbottom_bar .mainMenu .logo {
   width: 80px;
 }
-#header4Sass .hbottom_bar ul li {
+#header4Sass .hbottom_bar .mainMenu li {
   position: relative;
   list-style: none;
   padding: 15px;
 }
-#header4Sass .hbottom_bar ul li:hover {
+#header4Sass .hbottom_bar .mainMenu li:hover {
   background-color: #f5f5f5;
   color: black;
 }
-#header4Sass .hbottom_bar ul li:hover a {
+#header4Sass .hbottom_bar .mainMenu li:hover a {
   color: black;
-  font-weight: bold;
 }
-#header4Sass .hbottom_bar ul li:hover .hiddenMenu {
+#header4Sass .hbottom_bar .mainMenu li:hover .hiddenMenu {
   display: block;
 }
-#header4Sass .hbottom_bar ul a {
+#header4Sass .hbottom_bar .mainMenu a {
   text-decoration: none;
   color: white;
 }
-#header4Sass .hbottom_bar ul .hiddenMenu {
+#header4Sass .hbottom_bar .mainMenu .hiddenMenu {
   color: black;
   background-color: #f5f5f5;
-  padding: 13px 20px;
   position: absolute;
   display: none;
   width: 150px;
   top: 100%;
   left: 0%;
 }
-#header4Sass .hbottom_bar ul .hiddenMenu li {
+#header4Sass .hbottom_bar .mainMenu .hiddenMenu li {
   padding: 10px 0;
+  width: auto;
+  height: auto;
 }
-#header4Sass .hbottom_bar ul .hiddenMenu li:hover {
+#header4Sass .hbottom_bar .mainMenu .hiddenMenu li:hover {
   background-color: #e6e6e6;
 }
 
