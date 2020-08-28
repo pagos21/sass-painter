@@ -1,7 +1,7 @@
 @mixin flex_Col_Right{
   display: flex;
   justify-content: flex-end;
-  padding: 10px 0;
+  @include padding4allPage;
 }
 @mixin standardPadding{
   padding: 10px 5%;
@@ -9,6 +9,7 @@
 
 #header4Sass{
   background-color: black;
+  padding: 0 5%;
 
   .htop_bar{
     @include flex_Col_Right;
