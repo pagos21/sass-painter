@@ -39,6 +39,7 @@
       @include flex_Col_Right;
       @include standardPadding;
       justify-content: space-around;
+      align-items: center;
       color: white;
       .logo{
         width: 80px;

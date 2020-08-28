@@ -36,6 +36,7 @@
   padding: 10px 0;
   padding: 10px 5%;
   justify-content: space-around;
+  align-items: center;
   color: white;
 }
 #header4Sass .hbottom_bar ul .logo {
