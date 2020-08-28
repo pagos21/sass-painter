@@ -1,0 +1,36 @@
+$bg_main:purple;
+$color_main: white;
+
+@import 'parts/_common.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+
+}
+
+
+@import 'parts/_header.scss';
+
+div.big_cont{
+
+}
+@import 'parts/_intro.scss';
+
+
+// @for $i from 1 through 4 {
+//   .margin-top-#{$i * 15}{
+//     margin-top: #{$i * 15};
+//   }
+// }
+
+// $i: 15;
+// @while $i <= 60 {
+//   .margin-top-#{$i}{
+//     margin-top: {$i};
+//   }
+//   $i: $i + 15;
+// }

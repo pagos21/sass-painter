@@ -1,0 +1,29 @@
+div.intro{
+  background-image: url(img/intro.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  height: 500px;
+
+  .intro_cont{
+    padding: 5%;
+    display: flex;
+    justify-content: flex-end;
+
+  }
+
+  .intro_specific{
+    background-color: red;
+    height: 300px;
+    width: 400px;
+    margin: 0 1%;
+
+  }
+  .intro_download{
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    margin: 0 1%;
+
+  }
+}
