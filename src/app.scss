@@ -18,8 +18,175 @@ body{
 div.big_cont{
   // @include padding4allPage
 }
-@import 'parts/_intro.scss';
+.sticky_bar{
+  margin: auto;
+  padding-left: 10%;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f5f5f5;
 
+  li{
+    padding: 25px;
+    list-style: none;
+    &:hover{background-color: white;
+      border-bottom: 3px solid black;}
+    }
+    a{text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      &:hover{color: black;}
+    }
+  }
+
+@import 'parts/_intro.scss';
+@import 'parts/_introvideo.scss';
+@import 'parts/_carouselandmore.scss';
+
+
+.info{
+  padding: 0 10%;
+  @include txt;
+  color: white;
+  background-color: #222;
+  width: 100%;
+  img{width: 60%; margin-bottom: 50px;}
+  .infosplitted{
+    display: flex;
+    justify-content: flex-end;
+    .infoStxt{
+      padding-left: 5% 0;
+      width: 35%;
+      line-height: 2;
+    }
+    .infoSimg{
+      float: right;
+      img{display: flex; float: right; width: 80%;}
+    }
+  }
+}
+
+
+
+
+.info2{
+  padding: 0 10%;
+  @include txt;
+  color: white;
+  background-color: #222;
+  width: 100%;
+}
+
+
+.infosplitted{
+  display: flex;
+  justify-content: flex-end;
+  .infoStxt{
+    padding-left: 5% 0;
+    width: 35%;
+    line-height: 2;
+  }
+  .infoSimg{
+    float: left;
+    img{display: flex; float: left; width: 80%;}
+  }
+}
+
+.emptySpace{
+  height: 650px;
+  background-image: url(img/eye.jpg);
+  background-position: center bottom;
+  background-attachment: fixed;
+}
+
+.tools{
+  @include txt;
+  .toolsAndEffects{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 50px;
+    .block1{
+      @include for5blocks;
+      background-image: url(img/block1.jpg);
+    }
+    .block2{
+      @include for5blocks;
+
+      background-image: url(img/block2.jpg);
+    }
+    .block3{
+      @include for5blocks;
+
+      background-image: url(img/block3.jpg);
+    }
+    .block4{
+      @include for5blocks;
+
+      background-image: url(img/block4.jpg);
+    }
+    .block5{
+      @include for5blocks;
+
+      background-image: url(img/block5.jpg);
+    }
+  }
+}
+
+
+.pre_footer{
+  display: flex;
+  background-image: url(img/lastbg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding: 0 10%;
+  @include txt;
+  font-size: 18px;
+  .lastinfo1{
+    margin: 50px 5%;
+    width: 45%;
+    background-color: white;
+    color: black;
+
+  }
+}
+
+.contacts{
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.col{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  h3{margin-top: 50px;}
+  li{padding: 10px 0; list-style: none;}
+}
+
+.footer{
+  @include padding4allPage;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: #1e1e1e;
+  .footerSponsors{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+  }
+  .copyright{
+    color: white;
+    a{text-decoration: none; color: #999;
+      margin: 0 5px;
+    &:hover{color: white;} }
+  }
+  span {margin-left: 20px;}
+}
 
 // @for $i from 1 through 4 {
 //   .margin-top-#{$i * 15}{

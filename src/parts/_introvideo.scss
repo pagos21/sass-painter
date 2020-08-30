@@ -1,0 +1,51 @@
+.intro_video{
+
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  background-image: url(img/bg_video.jpg);
+  text-align: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  height: 850px;
+  color: white;
+
+  .intro_video_txt{
+    @include padding10perlateral;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    h2{font-size: 36px; margin-bottom: 20px; padding: 0 5%;}
+    p{font-size: 18px; margin-bottom: 20px; padding: 0 12%; line-height: 1.5}
+  }
+  .download_pdf{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    img{width: 34px; height: 34px;}
+    span{font-size: 18px; padding-left: 10px;}
+  }
+
+  .video{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    img{position: absolute; width: 1010px; bottom: 0;}
+    .ps_main{border-radius: 15px; width: 1000px;}
+    i{position: absolute;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 100px;
+      top: 50%;
+      &:hover{color: grey;}
+      }
+  }
+}

@@ -1,0 +1,14 @@
+.carousel{
+  width: 100%;
+  @include padding4allPage;
+  @include txt;
+
+  img{width: 75%;}
+}
+
+.emptySpace{
+  height: 650px;
+  background-image: url(img/static_bg.jpg);
+  background-position: center bottom;
+  background-attachment: fixed;
+}

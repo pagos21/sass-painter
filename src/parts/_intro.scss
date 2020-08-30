@@ -7,7 +7,8 @@ div.intro{
   // height: 500px;
 
   .intro_cont{
-    padding: 5%;
+    padding: 1% 5% 5% 0;
+    padding-bottom: 0;
     display: flex;
     justify-content: flex-end;
 
@@ -31,7 +32,7 @@ div.intro{
       color: white;
       width: 200px;
       position: absolute;
-      bottom: 0;
+      bottom: 10px;
       cursor: pointer;
 
       .txt_intro_trial{
@@ -54,7 +55,7 @@ div.intro{
     padding: 1% 1%;
     background-color: black;
     color: white;
-    height: 350px;
+    height: 410px;
     width: 400px;
 
     img{
