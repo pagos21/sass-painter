@@ -8,6 +8,37 @@
   background-color: black;
   padding: 0 5%;
 }
+#header4Sass .hiddenMenuResp {
+  display: none;
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  background: black;
+  color: white;
+  box-shadow: 5px 10px 18px #888888;
+}
+#header4Sass .hiddenMenuResp li {
+  list-style: none;
+}
+#header4Sass .close {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: grey;
+  font-size: 35px;
+  text-decoration: none;
+}
+#header4Sass .hiddenMenuArts {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
 #header4Sass .hiddenHamb i {
   cursor: pointer;
   font-size: 30px;

@@ -10980,6 +10980,12 @@ return jQuery;
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 console.log("salve1");
+$(".hiddenHamb").click(function () {
+  $(".hiddenMenuResp").fadeIn("slow");
+});
+$(".close").click(function () {
+  $(".hiddenMenuResp").fadeOut("slow");
+});
 
 /***/ }),
 
