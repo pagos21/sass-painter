@@ -91,9 +91,9 @@ div.big_cont{
   }
 }
 
-.emptySpace{
+.emptySpace2{
   height: 650px;
-  background-image: url(img/eye.jpg);
+  background-image: url(img/static_bg.jpg);
   background-position: center bottom;
   background-attachment: fixed;
 }
@@ -105,29 +105,11 @@ div.big_cont{
     justify-content: space-around;
     width: 100%;
     margin-bottom: 50px;
-    .block1{
-      @include for5blocks;
-      background-image: url(img/block1.jpg);
-    }
-    .block2{
-      @include for5blocks;
-
-      background-image: url(img/block2.jpg);
-    }
-    .block3{
-      @include for5blocks;
-
-      background-image: url(img/block3.jpg);
-    }
-    .block4{
-      @include for5blocks;
-
-      background-image: url(img/block4.jpg);
-    }
-    .block5{
-      @include for5blocks;
-
-      background-image: url(img/block5.jpg);
+    @for $i from 1 through 5 {
+      .block#{$i}{
+        @include for5blocks;
+        background-image: url(img/block#{$i}.jpg);
+      }
     }
   }
 }
@@ -187,12 +169,6 @@ div.big_cont{
   }
   span {margin-left: 20px;}
 }
-
-// @for $i from 1 through 4 {
-//   .margin-top-#{$i * 15}{
-//     margin-top: #{$i * 15};
-//   }
-// }
 
 // $i: 15;
 // @while $i <= 60 {
