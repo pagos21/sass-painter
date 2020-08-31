@@ -666,4 +666,14 @@ div.intro .intro_download button {
   div.intro .intro_download {
     display: none;
   }
+
+  .info .infosplitted {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .info2 .infosplitted {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
