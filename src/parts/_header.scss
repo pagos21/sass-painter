@@ -1,5 +1,6 @@
 @mixin flex_Col_Right{
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   @include padding4allPage;
 }
@@ -11,12 +12,28 @@
   background-color: black;
   padding: 0 5%;
 
+
+
+  .hiddenHamb i{
+    cursor: pointer;
+    font-size: 30px;
+    display: none;
+    color: white;
+  }
+  .hiddenHamb img{
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 0;
+  }
   .htop_bar{
+    visibility: visible;
     @include flex_Col_Right;
     @include standardPadding;
     align-items: center;
     color: #989898;
     font-size: 12px;
+
 
     p {
       padding: 0 10px;
@@ -35,6 +52,7 @@
 
 
   .hbottom_bar{
+    visibility: visible;
     font-size: 14px;
     .mainMenu{
       @include flex_Col_Right;

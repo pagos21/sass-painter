@@ -1,0 +1,54 @@
+
+@media screen and (max-width: 1000px) {
+  .intro_video{
+    height: 665px;
+  }
+
+  .intro_video .video .ps_main{
+    max-width: 99%;
+  }
+  .intro_video .video img{
+    max-width: 100%;
+  }
+
+  .intro_video .video i{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #header4Sass{
+    height: 50px;
+    .hiddenHamb i{
+      display: block;
+    }
+    .hiddenHamb img{
+      display: block;
+    }
+  }
+  #header4Sass .htop_bar{
+    display: none;
+  }
+  #header4Sass .hbottom_bar{
+    display: none;
+  }
+
+  div.intro{
+    background-image: none;
+    .intro_cont{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .intro_cont .hiddenbox{
+      display: block;
+    }
+    .intro_cont .intro_specific{
+      color: black;
+    }
+    .intro_download{
+      display: none;
+    }
+  }
+
+
+}

@@ -11,6 +11,9 @@ div.intro{
     padding-bottom: 0;
     display: flex;
     justify-content: flex-end;
+    .hiddenbox{
+      display: none;
+    }
 
   }
 

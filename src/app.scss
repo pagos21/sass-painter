@@ -20,6 +20,7 @@ div.big_cont{
 }
 .sticky_bar{
   margin: auto;
+  flex-wrap: wrap;
   padding-left: 10%;
   display: flex;
   justify-content: flex-start;
@@ -177,3 +178,6 @@ div.big_cont{
 //   }
 //   $i: $i + 15;
 // }
+
+
+@import 'parts/_mq.scss';
