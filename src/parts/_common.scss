@@ -19,6 +19,7 @@
 
 @mixin for5blocks {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-end;
   width: 18%;
@@ -28,4 +29,9 @@
   background-repeat: no-repeat;
   color: white;
   margin: 0;
+}
+
+@mixin for5blocksRes {
+  width: auto;
+
 }

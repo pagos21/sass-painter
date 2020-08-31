@@ -14,6 +14,12 @@
   .intro_video .video i{
     display: none;
   }
+
+  @for $i from 1 through 5 {
+    .block#{$i}{
+      @include for5blocksRes;
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
@@ -35,6 +41,7 @@
 
   div.intro{
     background-image: none;
+    height: 510px;
     .intro_cont{
       flex-wrap: wrap;
       justify-content: center;
@@ -44,6 +51,9 @@
     }
     .intro_cont .intro_specific{
       color: black;
+      .intro_trial{
+        bottom: auto;
+      }
     }
     .intro_download{
       display: none;
